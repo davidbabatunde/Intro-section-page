@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div></div>
+    <div id="modal">
+      <div id="navitems">
+        <button onclick="closeMenu()">
+          <img
+            id="close-button"
+            src="../images/icon-close-menu.svg"
+            alt="More"
+          />
+        </button>
+        <div id="sections">
+          <button onclick="openFeatures()">
+            Features
+            <img
+              id="features-button"
+              src="../images/icon-arrow-down.svg"
+              alt="More"
+            />
+          </button>
+          <div id="features-drop">
+            <p><img src="../images/icon-todo.svg" /> Todo List</p>
+            <p><img src="../images/icon-calendar.svg" /> Calendar</p>
+            <p><img src="../images/icon-reminders.svg" /> Reminders</p>
+            <p><img src="../images/icon-planning.svg" /> Planning</p>
+          </div>
+          <button onclick="openCompany()">
+            Company
+            <img
+              id="company-button"
+              src="../images/icon-arrow-down.svg"
+              alt="More"
+            />
+          </button>
+          <div id="company-drop">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </div>
+          <button>Careers</button>
+          <button>About</button>
+        </div>
+
+        <div id="logReg">
+          <button id="login">Login</button>
+          <button id="register">Register</button>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div id="navbar">
+        <img src="../images/logo.svg" alt="Company Logo" />
+        <div id="nav-sections">
+          <button onclick="openFeatures()">
+            Features
+            <img
+              id="features-button"
+              src="../images/icon-arrow-down.svg"
+              alt="More"
+            />
+          </button>
+          <div id="features-drop">
+            <p><img src="../images/icon-todo.svg" /> Todo List</p>
+            <p><img src="../images/icon-calendar.svg" /> Calendar</p>
+            <p><img src="../images/icon-reminders.svg" /> Reminders</p>
+            <p><img src="../images/icon-planning.svg" /> Planning</p>
+          </div>
+          <button onclick="openCompany()">
+            Company
+            <img
+              id="company-button"
+              src="../images/icon-arrow-down.svg"
+              alt="More"
+            />
+          </button>
+          <div id="company-drop">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </div>
+          <button>Careers</button>
+          <button>About</button>
+        </div>
+        <button id="menu-button" onclick="openMenu()">
+          <img src="../images/icon-menu.svg" alt="Menu" />
+        </button>
+      </div>
+    </header>
+
+    <img id="hero-mobile" src="../images/image-hero-mobile.png" alt="patzer" />
+
+    <h1 id="title">Make remote work</h1>
+
+    <p id="details">
+      Get your team in sync, no matter your location. Streamline processes,
+      create team rituals, and watch productivity soar.
+    </p>
+
+    <button id="learnMore">Learn more</button>
+
+    <div id="footer">
+      <img src="../images/client-databiz.svg" alt="Client Logo" />
+      <img src="../images/client-audiophile.svg" alt="Client Logo" />
+      <img src="../images/client-meet.svg" alt="Client Logo" />
+      <img src="../images/client-maker.svg" alt="Client Logo" />
+    </div>
+
+    <img
+      id="hero-desktop"
+      src="../images/image-hero-desktop.png"
+      alt="patzer"
+    />
+
+    <script src="App.js"></script>
+  </body>
+</html>
